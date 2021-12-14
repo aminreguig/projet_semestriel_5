@@ -24,7 +24,7 @@ def transform(image):
         image = np.asarray(image)
         img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         img_resize = (cv2.resize(img, size, interpolation=cv2.INTER_CUBIC))/255.
-        img_reshape = img_resize[np.newaxis,...]        
+        img_reshape  = img_resize[np.newaxis,...]        
         return img_reshape
 
         
